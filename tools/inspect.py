@@ -13,13 +13,13 @@ tile's Mapbox Vector Tile layers, and reports per zoom:
   are tagged secondary or tertiary;
 - `mountain_peak` features with an elevation.
 
-Zooms checked: 5, 9 and 12 by default (the brief's three), or --zooms=5,7,9.
+Zooms checked: 5, 9 and 12 by default, or --zooms=5,7,9.
 At high zooms it samples up to --sample tiles (default 400) evenly.
 
 It is a check, not just a report: for every checked zoom inside the file's own
 zoom range there must be tiles, and the sampled tiles must carry the
 `transportation` and `water` layers the Tarmac style draws. Otherwise it
-prints FAIL lines and exits 1 (extract-build.sh `verify` relies on that).
+prints FAIL lines and exits 1 (build.sh `verify` relies on that).
 Zooms outside the file's range (z9 in the z0-6 world extract) are skipped.
 """
 import gzip

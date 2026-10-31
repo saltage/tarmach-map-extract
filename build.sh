@@ -39,14 +39,14 @@ PMTILES="${PMTILES:-$(command -v pmtiles || echo /opt/homebrew/bin/pmtiles)}"
 
 BIN="$ROOT/bin"; SRC="$ROOT/sources"; OUT="$ROOT/out"; TMP="$ROOT/tmp"
 
-# The layers the roundup reads. tarmac-style.json draws water, waterway,
-# transportation and (optionally) place; the cards read transportation_name
-# (NEW's shields), mountain_peak (FURTHEST's high point) and water_name (story
-# cards' sea names). The style's building layer starts at z15, beyond every
+# The layers the app reads. Its map style draws water, waterway,
+# transportation and (optionally) place; its summary cards read
+# transportation_name (road-number shields), mountain_peak (a journey's high
+# point) and water_name (sea names). The style's building layer starts at z15, beyond every
 # extract here, so it is left out.
 LAYERS="${LAYERS:-water,waterway,transportation,transportation_name,place,mountain_peak,water_name}"
 
-die() { echo "extract-build: $*" >&2; exit 1; }
+die() { echo "build.sh: $*" >&2; exit 1; }
 
 need_java() {
   [ -x "$JAVA" ] || die "no Java 21 at $JAVA. Run: brew install openjdk@21"

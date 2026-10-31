@@ -13,12 +13,11 @@
 // What this adds (each only below the zoom OpenMapTiles starts it, so nothing
 // is drawn twice):
 //   transportation       primary z5-6 and secondary z5-8, so A- and B-roads
-//                        exist at month scale (story cards' RESULT, "The
-//                        extract should carry B-roads at month scale");
+//                        exist at the scale of a month's driving;
 //                        with --tarmac_tertiary_from=N, tertiary from zN too
 //   transportation_name  numbered (ref'd) primary, secondary and tertiary
 //                        roads from z9 (tertiary from where its line starts),
-//                        for NEW's road shields: class and ref, no name, so
+//                        for road-number shields: class and ref, no name, so
 //                        a road merges into long runs (names arrive at z12)
 //
 // The added features carry the same attribute names OpenMapTiles uses (class,
