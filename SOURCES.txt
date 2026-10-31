@@ -1,0 +1,12 @@
+# Sources of the Tarmac roundup extracts (ODbL 4.6: the method to rebuild)
+built_with: scripts/extract-build.sh, planetiler 0.10.2, profile TarmacExtract.java
+great-britain-latest.osm.pbf  2181259810 bytes  modified 2026-10-03
+greater-london-latest.osm.pbf  129315836 bytes  modified 2026-10-03
+lake_centerline.shp.zip  80906805 bytes  modified 2026-10-03
+monaco-latest.osm.pbf  691511 bytes  modified 2026-10-03
+natural_earth_vector.sqlite.zip  434210731 bytes  modified 2026-10-03
+water-polygons-split-3857.zip  931125111 bytes  modified 2026-10-03
+gb-noplace.pmtiles: OSM as of 2026-10-02T20:21:34Z, from https://download.geofabrik.de/europe/great-britain-updates
+gb.pmtiles: OSM as of 2026-10-02T20:21:34Z, from https://download.geofabrik.de/europe/great-britain-updates
+london.pmtiles: OSM as of 2026-10-02T20:21:34Z, from https://download.geofabrik.de/europe/united-kingdom/england/greater-london-updates
+world.pmtiles: OSM as of 2026-10-02T20:21:34Z, from https://download.geofabrik.de/europe/monaco-updates
